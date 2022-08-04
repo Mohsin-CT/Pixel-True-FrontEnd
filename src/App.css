@@ -1,0 +1,342 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom css */
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.font-Manjari {
+  font-family: 'Manjari', sans-serif;
+  font-weight: 700;
+}
+.font-Manjari-400 {
+  font-family: 'Manjari', sans-serif;
+  font-weight: 400;
+}
+.font-Manjari-100 {
+  font-family: 'Manjari', sans-serif;
+  font-weight: 100;
+}
+.font-poppin-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+.font-poppin-semibold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+.font-poppin-regular {
+  font-family: 'Poppins', sans-serif;
+}
+.font-poppin-Medium {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+header .logo-overlay:before {
+  content: "";
+  width: 397px;
+  height: 507px;
+  pointer-events: none;
+  position: absolute;
+  left: -25px;
+  top: -32px;
+  background: #F7F9FB;
+  border-radius: 32px 32px 32px 184px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  z-index: -1;
+}
+.HeroSectionTitleWrap {
+  max-width: 850px;
+}
+.accordionBtn[aria-expanded="true"]:before {
+  display: none;
+}
+.accordionBtn:before, .accordionBtn:after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 25px;
+  background: #fff;
+  right: 20px;
+  top: 50%;
+  border-radius: 10px;
+  transform: translateY(-50%);
+}
+.accordionBtn {
+  position: relative;
+}
+.accordionBtn:after {
+  transform: rotate(90deg) translateX(-250%);
+}
+.HeroSectionImg-overlay:before,
+.PricingSection-overlay:before {
+  content: "";
+  width: 550px;
+  top: -205px;
+  bottom: 0;
+  background: #FFEEE3;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.PricingSection-overlay:before {
+  bottom: -695px;
+}
+.HeroAboutusImg-overlay:before {
+  content: "";
+  width: 100%;
+  top: -205px;
+  bottom: 0;
+  background: rgba(255, 238, 227, 0.5);
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.LightSimpleTextBlock {
+  max-width: 1600px;
+}
+.LightSimpleTextBlock2 {
+  max-width: 100%;
+}
+.CopywritingSecrets {
+  max-width: 1405px;
+}
+.BookCallSection,
+.FooterContainer {
+  max-width: 1396px;
+}
+.Section4LightContainer::before{
+  content: "";
+  width: 301px;
+  height: 250px;
+  background: url(../src/images/shape1.svg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+.LightContentBoxContainer:before,
+.LightContentBoxContainer:after,
+.BookCallSection:before,
+.BookCallSection:after,
+.BookCallSection3:before,
+.BookCallSection3:after {
+  content: "";
+  width: 301px;
+  height: 250px;
+  background: url(../src/images/shape1.svg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+.LightContentBoxContainer:after,
+.BookCallSection:after,
+.BookCallSection3:after {
+  transform: rotate(-180deg);
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.BookCallSection:before,
+.BookCallSection:after,
+.BookCallSection3:before,
+.BookCallSection3:after {
+  width: 260px;
+  height: 216px;
+  background: url(../src/images/shape2.svg);
+  background-size: contain;
+}
+.BookCallSection2:before,
+.BookCallSection2:after {
+  background: url(../src/images/shape3.svg);
+  background-size: contain;
+}
+.AlternativesMainTable tr th:not(:first-child),
+.AlternativesMainTable tr td:not(:first-child) {
+  background: #fff;
+  text-align: center;
+  padding: 30px 30px;
+  border-left: 1px solid #E5E5E5;
+  border-right: 1px solid #E5E5E5;
+}
+.AlternativesMainTable tr:first-child th:not(:first-child) {
+  border-top: 1px solid #E5E5E5;
+  padding-top: 40px;
+}
+.AlternativesMainTable tr:last-child td:not(:first-child) {
+  border-bottom: 1px solid #E5E5E5;
+  padding-bottom: 50px;
+}
+.AlternativesMainTable tr th {
+    text-align: left;
+    font-size: 24px;
+  }
+  .AlternativesMainTable tr td {
+    font-size: 20px;
+    font-family: 'Manjari', sans-serif;
+  }
+.menu-overlay:before {
+    content: "";
+    width: calc(100% - 297px);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.28);
+}
+.CustomCheckbox li {
+  margin:  0 44px 0 0;
+  position: relative;
+}
+.CustomCheckbox li label:before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    border-radius: 5px;
+}
+.CustomCheckbox li input:checked + label:before {
+  background:#fff url(../src/images/checkSignIcon.svg);
+  background-position: center;
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+.CustomCheckbox li label {
+    padding: 0 0 0 40px;
+}
+.BookCallFullW .LightSimpleTextBlock2 {
+    background: #eb5728;
+    position: relative;
+}
+.BookCallFullW .LightSimpleTextBlock2 .BookCallSection {
+    position: initial;
+    box-shadow: none;
+}
+  @media all and (max-width: 1749px) {
+    .LightContentBoxContainer:before, .LightContentBoxContainer:after, .BookCallSection:before, .BookCallSection:after {
+      width: 220px;
+      height: 183px;
+      background-size: contain;
+  }
+  .AlternativesMainTable tr th {
+    font-size: 18px;
+    padding-right: 20px;
+  }
+  .AlternativesMainTable tr th:not(:first-child),
+  .AlternativesMainTable tr td:not(:first-child) {
+    padding: 20px;
+  }
+  }
+  @media all and (max-width:1749px) {
+    .HeroSectionImg-overlay:before {
+      width: 330px;
+  }
+  header .logo-overlay:before {
+    width: 255px;
+    height: 289px;
+     border-radius: 32px 32px 32px 85px;
+}
+.PricingSection-overlay:before {
+  width: 320px;
+  bottom: -600px;
+}
+  }
+  @media all and (max-width:1024px) {
+    .AlternativesMainTable tr th {
+      font-size: 16px;
+    }
+    .accordionBtn:before, .accordionBtn:after {
+      width: 3px;
+      height: 23px;
+  }
+  }
+  @media all and (max-width: 1024px) {
+    .HeroSectionImg-overlay:before {
+      width: 160px;
+  }
+  .LightContentBoxContainer:before, .LightContentBoxContainer:after, .BookCallSection:before, .BookCallSection:after {
+    width: 136px;
+    height: 113px;
+    background-repeat: no-repeat;
+}
+  }
+  @media all and (max-width: 768px) {
+    .HeroSectionImg-overlay:before {
+      width: 137px;
+  }
+  header .logo-overlay:before {
+    width: 180px;
+    height: 200px;
+    border-radius: 32px 32px 32px 50px;
+}
+.hide-br br {
+  display: none;
+}
+.AlternativesMainTable tr th:not(:first-child),
+.AlternativesMainTable tr td:not(:first-child) {
+  padding: 20px 5px;
+}
+.AlternativesMainTable tr td,
+.AlternativesMainTable tr th {
+  font-size: 12px;
+}
+.AlternativesMainTable tr th {
+  padding-right: 10px;
+}
+.AlternativesMainTable svg {
+  width: 12px;
+}
+.AlternativesMainTable tr:first-child th:not(:first-child) {
+  padding-top: 20px;
+}
+.accordionBtn:before, .accordionBtn:after {
+  width: 2px;
+  height: 15px;
+}
+.accordionBtn:after {
+  transform: rotate(90deg) translateX(-357%);
+}
+.PricingSection-overlay:before {
+  width: 137px;
+}
+  }
