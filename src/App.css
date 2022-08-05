@@ -67,7 +67,9 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
 }
-header .logo-overlay:before {
+.overlayTitle:before,
+.overlayTitle2:before,
+.overlayTitle3:before {
   content: "";
   width: 397px;
   height: 507px;
@@ -79,6 +81,18 @@ header .logo-overlay:before {
   border-radius: 32px 32px 32px 184px;
   transform: matrix(-1, 0, 0, 1, 0, 0);
   z-index: -1;
+}
+.overlayTitle2:before,
+.overlayTitle3:before {
+  width: 513px;
+  height: 230px;
+  background-color: #FEEEE7;
+  border-radius: 32px 32px 32px 184px;
+  top: -38px;
+  left: -141px;
+}
+.overlayTitle3:before {
+  height: 550px;
 }
 .HeroSectionTitleWrap {
   max-width: 850px;
@@ -252,6 +266,25 @@ header .logo-overlay:before {
     position: initial;
     box-shadow: none;
 }
+.FiltersMenu li.active {
+  position: relative;
+}
+.FiltersMenu {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.FiltersMenu li.active a {
+  color: #EB5728;
+}
+.FiltersMenu li.active:after {
+  content: "";
+  height: 4px;
+  background: #EB5728;
+  position: absolute;
+  bottom: -16px;
+  left: -15px;
+  right: -15px;
+}
   @media all and (max-width: 1749px) {
     .LightContentBoxContainer:before, .LightContentBoxContainer:after, .BookCallSection:before, .BookCallSection:after {
       width: 220px;
@@ -266,15 +299,21 @@ header .logo-overlay:before {
   .AlternativesMainTable tr td:not(:first-child) {
     padding: 20px;
   }
+  .overlayTitle3:before {
+    height: 400px;
+}
+.overlayTitle2:before, .overlayTitle3:before {
+  width: 430px;
+}
   }
   @media all and (max-width:1749px) {
     .HeroSectionImg-overlay:before {
       width: 330px;
   }
-  header .logo-overlay:before {
-    width: 255px;
-    height: 289px;
-     border-radius: 32px 32px 32px 85px;
+.overlayTitle:before {
+  width: 300px;
+  height: 450px;
+  border-radius: 32px 32px 32px 85px;
 }
 .PricingSection-overlay:before {
   width: 320px;
@@ -290,6 +329,34 @@ header .logo-overlay:before {
       height: 23px;
   }
   }
+  @media all and (max-width:1549px) {
+    .overlayTitle2:before, .overlayTitle3:before {
+      width: 340px;
+      border-radius: 32px 32px 32px 100px;
+  }
+  .overlayTitle3:before {
+    height: 300px;
+}
+  }
+  @media all and (max-width:1280px) {
+    .overlayTitle:before {
+      width: 260px;
+      height: 293px;
+  }
+  }
+  @media all and (max-width:1250px) {
+    .overlayTitle:before {
+      width: 215px;
+      height: 284px;
+  }
+  .overlayTitle2:before, .overlayTitle3:before {
+    width: 320px;
+    border-radius: 32px 32px 32px 70px;
+}
+  .overlayTitle3:before {
+    height: 260px;
+}
+  }
   @media all and (max-width: 1024px) {
     .HeroSectionImg-overlay:before {
       width: 160px;
@@ -300,11 +367,22 @@ header .logo-overlay:before {
     background-repeat: no-repeat;
 }
   }
+  @media all and (max-width:800px) {
+    .overlayTitle2:before, .overlayTitle3:before {
+      width: 250px;
+      border-radius: 32px 32px 32px 184px;
+      left: -33px;
+      top: -33px;
+    }
+    .overlayTitle3:before {
+      height: 165px;
+    }
+  }
   @media all and (max-width: 768px) {
     .HeroSectionImg-overlay:before {
       width: 137px;
   }
-  header .logo-overlay:before {
+  .overlayTitle:before {
     width: 180px;
     height: 200px;
     border-radius: 32px 32px 32px 50px;

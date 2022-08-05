@@ -16,7 +16,7 @@ export default function HeroAboutus(props) {
     BookACallBtn,
   } = TWCconfig;
   return (
-    <div className="bg-pink-150 w-full mx-auto flex flex-wrap items-center 2xl:items-start pt-[20px] xl:pt-[100px] pb-[50px] xl:pb-[100px] pl-[20px] lg:pl-[50px] 2xl:pl-20 pr-[20px] md:pr-[50px]  relative ">
+    <div className="bg-pink-150 w-full mx-auto flex flex-wrap items-center 2xl:items-start pt-[150px] lg:pt-[180px] xl:pt-[250px] xl:pt-[100px] pb-[50px] xl:pb-[100px] pl-[20px] lg:pl-[50px] 2xl:pl-20 pr-[20px] md:pr-[50px]  relative ">
 
       <div className={HeroAboutusImgClass}>
         <img className="w-[80%] lg:w-[70%] xl:w-[47%]" src={HeroAboutusImg} alt="" />

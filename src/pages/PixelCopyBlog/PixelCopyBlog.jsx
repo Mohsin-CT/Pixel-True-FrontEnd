@@ -31,7 +31,7 @@ const cardData = [
 
 const PixelCopyBlog = () => {
   const navigate = useNavigate();
-  const {} = TWCconfig;
+  const {HeroSectionTitleoverlayTitle3} = TWCconfig;
 
   const NavigateTo = () => {
     localStorage.setItem("SelectedPage", "individualBlog");
@@ -41,19 +41,17 @@ const PixelCopyBlog = () => {
   return (
     <>
       <Header />
-      <div className="flex flex-col bg-orange-150 py-5 lg:pt-36 lg:py-0  ">
-        <div className="pl-4 lg:pl-0 text-[32px] leading-[2.5rem] lg:text-[64px] w-full lg:leading-[72px] font-[600] flex justify-center ">
-          <p className=" text-[32px] lg:text-[64px] font-[700]">
-            Pixel <span className="text-orange-850">Copy Blog</span>
-          </p>
-        </div>
-        <div className="flex justify-center">
-          <p className="px-4 lg:px-24 py-7 text-center text-[16px] lg:text-[32px] font-[400] lg:w-[1600px] lg:leading-[40px]">
+      <div className="flex bg-pink-150 pt-[150px] lg:pt-[180px] xl:pt-[250px] 2xl:pt-[421px] pb-[100px] px-[20px] md:px-[50px] lg:px-[100px]">
+      <div className="w-full max-w-[1500px] mx-auto flex justify-center text-center flex-col ">
+        <h1 className={HeroSectionTitleoverlayTitle3}>
+          Pixel Copy <span className="text-orange-850">Blog</span>
+        </h1>
+        <p className="mt-[32px] text-center text-[18px] md:text-[20px] lg:text-[25px] xl:text-[28px] 2xl:text-[32px] font-[400] leading-[1.6]">
             Find our latest articles on all things copy. Make sure to sign up
-            for our newsletter so that you don't miss the hottest tips on
+            for our newsletter so that you <br /> don't miss the hottest tips on
             improving your organic traffic with content creation.
           </p>
-        </div>
+      </div>
       </div>
       <div className="flex justify-center pt-16">
         <div className="container flex justify-center flex-wrap py-6">

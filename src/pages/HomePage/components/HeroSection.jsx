@@ -10,13 +10,14 @@ export default function HeroSection(props) {
     HeroSectionTitle,
     HeroSectionTitleWrap,
     HeroSectionText,
+    HeroSectionTitleoverlayTitle,
     SeeBtn,
   } = TWCconfig;
   return (
     <div className={HeroSectionWrapper}>
       <div className={HeroSectionContent}>
         <div className={HeroSectionTitleWrap}>
-          <h1 className={HeroSectionTitle}>
+          <h1 className={HeroSectionTitleoverlayTitle}>
             Hire a U.S. Copywriting <br /> Team to{" "}
             <b className="font-bold text-orange-850">
               Grow Your <br /> Business <em>Organically</em>{" "}

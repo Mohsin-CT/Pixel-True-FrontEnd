@@ -23,7 +23,7 @@ export default function OurMissionAboutus(props) {
           </p>
         </div>
         <div className="w-full md:w-1/2 pt-[50px] md:pt-[0] lg:px-[50px] xl:px-[100px]">
-        <img className="max-w-[445px] mx-auto" src={OurMissionImg} alt="" />
+        <img className="w-full max-w-[445px] mx-auto" src={OurMissionImg} alt="" />
         </div>
       </div>
     </div>

@@ -32,7 +32,7 @@ module.exports = {
           850: "#1A272D",
         },
         red: { 50: "#EB4E4E" },
-        pink: { 200: "#FEEEE7" },
+        pink: { 200: "#FEEEE7", 150: "#FFEEE380", 50: "#FBF7F4" },
         yellow: { 50: "#FF8C211A", 150: "#FF8C21" },
 
         green: { 200: "#dcefec", 150: "#E2F4EF", 400: "#6CC6B0", 550: "#4bb198" },

@@ -63,7 +63,7 @@ const ActivateSteps = () => {
       </div>
       <div className="flex-col">
         <div className="flex ">
-          <h3 className="text-[24px] font-[700]">
+          <h3 className="text-[24px] font-poppin-bold">
             The automated system can handle many different tasks This Includes :
           </h3>
         </div>

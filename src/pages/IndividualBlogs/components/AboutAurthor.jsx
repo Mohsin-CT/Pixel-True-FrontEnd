@@ -65,7 +65,7 @@ const AboutAurthor = () => {
               className="h-20 w-full pl-10 rounded-[3rem] flex items-center bg-gray-150"
               placeholder="Email*"
             />
-            <button className="flex justify-center items-center bg-orange-850 text-white text-[24px] font-[700] rounded-[3rem] w-full py-6">
+            <button className="flex justify-center items-center bg-orange-850 text-white text-[24px] font-poppin-bold rounded-[3rem] w-full py-6">
               Post Reply
             </button>
           </div>
