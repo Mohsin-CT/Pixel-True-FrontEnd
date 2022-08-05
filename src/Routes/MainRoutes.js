@@ -8,7 +8,6 @@ import IndividualBlogs from "../pages/IndividualBlogs/IndividualBlogs";
 import PixelCopyBlog from "../pages/PixelCopyBlog/PixelCopyBlog";
 import Pricing from "../pages/PricingPage/Pricing";
 
-
 const MainRoutes = () => {
   return (
     <BrowserRouter>
@@ -20,7 +19,6 @@ const MainRoutes = () => {
         <Route path="individualBlog" element={<IndividualBlogs />} />
         <Route path="pixelCopyBlog" element={<PixelCopyBlog />} />
         <Route path="pricing" element={<Pricing />} />
-
       </Routes>
     </BrowserRouter>
   );

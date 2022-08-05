@@ -16,7 +16,8 @@ import img4 from "../../images/img4.png";
 import AlternativesTable from "./components/AlternativesTable";
 import PricingTable from "../commonComponents/PricingTable";
 import AddOns from "./components/AddOns";
-import SliderView from "../../images/SliderView.png";
+import SliderView from "../commonComponents/SliderView";
+// import SliderView from "../../images/SliderView.png";
 
 const Homepage = () => {
   const {
@@ -107,13 +108,17 @@ const Homepage = () => {
       </div>
 
       <div className={CopywritingSecrets}>
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-1/2 border">
           <h2 className={CopywritingTitle}>Copywriting Secrets</h2>
           <p className={CopywritingP}>
             Sign up for contact and receive a series of invaluable copywriting
             tips that are sure to improve your SEO and increase organic traffic.
           </p>
-          <img className=" lg:-ml-[60px] mt-[70px]" src={img3} alt="" />
+          <img
+            // className=" lg:-ml-[60px] mt-[70px] w-full h-full"
+            src={img3}
+            alt=""
+          />
         </div>
         <div className=" w-full lg:w-1/2">
           <CopywritingForm />
@@ -188,9 +193,14 @@ const Homepage = () => {
             results through copy
           </p>
           <div className={SliderContainer}>
-            <img src={SliderView} alt="" />
+            {/* <img src={SliderView} alt="" /> */}
+            <div className="h-[24rem] w-full">
+              <SliderView />
+            </div>
           </div>
-          <SeePricing />
+          <div className="flex ">
+            <SeePricing />
+          </div>
         </div>
       </div>
 

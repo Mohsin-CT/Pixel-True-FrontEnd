@@ -340,3 +340,36 @@ header .logo-overlay:before {
   width: 137px;
 }
   }
+
+
+
+  /* Slider Css */
+.react-3d-carousel .slider-container .slider-content .slider-single.active .slider-single-content{
+  width: 80%;
+  height: 20rem;
+ 
+}
+.react-3d-carousel .slider-container .slider-content .slider-single.active{
+  display: flex;
+  justify-content: center;
+}
+.react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content img{
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.react-3d-carousel .slider-container .slider-content .slider-single.preactive .slider-single-content{
+  height: 20rem;
+  
+}
+.react-3d-carousel .slider-container .slider-content .slider-single.preactive .slider-single-content{
+  height: 20rem;
+  
+}
+.react-3d-carousel .slider-container .slider-content .slider-single.proactive .slider-single-content{
+  height: 20rem;
+}
+.fa{
+  color: black;
+}
+
+
