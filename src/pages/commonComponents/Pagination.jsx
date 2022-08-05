@@ -1,66 +1,20 @@
 import React from "react";
-
+import TWCconfig from "../../TWCconfig.json";
 const Pagination = () => {
+  const { PaginationContainer, PaginationBtn, PaginationItemActive, PaginationItem } = TWCconfig;
   return (
-    <ul className="inline-flex -space-x-px">
-      <li>
-        <a
-          href="#"
-          className="py-2 px-10 ml-0 leading-tight text-white bg-orange-850 rounded-full text-[20px] font-[700]"
-        >
-          Prev
-        </a>
-      </li>
-      <li>
-        <a
-          href="#"
-          className="py-2 px-3 leading-tight text-orange-850 text-[20px] font-[700]"
-        >
-          1
-        </a>
-      </li>
-      <li>
-        <a
-          href="#"
-          className="py-2 px-3 leading-tight text-orange-850 text-[20px] font-[700]"
-        >
-          2
-        </a>
-      </li>
-      <li>
-        <a
-          href="#"
-          aria-current="page"
-          className="py-2 px-3 text-orange-850 text-[20px] font-[700]"
-        >
-          3
-        </a>
-      </li>
-      <li>
-        <a
-          href="#"
-          className="py-2 px-3 leading-tight text-orange-850 text-[20px] font-[700]"
-        >
-          4
-        </a>
-      </li>
-      <li>
-        <a
-          href="#"
-          className="py-2 px-3 leading-tight text-orange-850 text-[20px] font-[700]"
-        >
-          5
-        </a>
-      </li>
-      <li>
-        <a
-          href="#"
-          className="py-2 px-10 leading-tight text-white bg-orange-850 rounded-full text-[20px] font-[700]"
-        >
-          Next
-        </a>
-      </li>
-    </ul>
+    <div className={PaginationContainer}>
+          <button className={PaginationBtn}>Prev</button>
+          <ul className="flex justify-center items-center space-x-[10px] text-[20px] text-orange-850 font-poppin-bold">
+            <li> <a className={PaginationItemActive} href="#">1</a> </li>
+            <li> <a className={PaginationItem} href="#">2</a> </li>
+            <li> <a className={PaginationItem} href="#">3</a> </li>
+            <li> <a className={PaginationItem} href="#">4</a> </li>
+            <li>...</li>
+            <li> <a className={PaginationItem} href="#">6</a> </li>
+          </ul>
+          <button className={PaginationBtn}>Next</button>
+        </div>
   );
 };
 

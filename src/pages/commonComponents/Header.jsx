@@ -26,13 +26,13 @@ export default function Header(props) {
 
   return (
     <header
-      className={`w-full flex ${
+      className={`w-full flex absolute left-0 right-0 top-0 z-10 ${
         location === "individualBlog" ||
         location === "writingSample" ||
         location === "activateTMobile" ||
         location === "pixelCopyBlog" ||
         location === "aboutUs"
-          ? "bg-orange-150"
+          ? ""
           : ""
       }`}
     >

@@ -20,13 +20,14 @@ const WritingSample = () => {
       <Header />
       <WritingHeroSection />
       <CopyWritingTeam />
-      <div className="py-20">
+      <div className="px-[20px] md:px-[50px] lg:px-[100px]">
         <SeePricing />
       </div>
       <div>
         <PixelCopy />
+        
       </div>
-
+      <div className="w-full bg-pink-50">
       <div className={CopywritingSecrets}>
         <div className="w-full lg:w-1/2">
           <h2 className={CopywritingTitle}>Copywriting Secrets</h2>
@@ -40,6 +41,8 @@ const WritingSample = () => {
           <CopywritingForm />
         </div>
       </div>
+      </div>
+      
       <Footer />
     </div>
   );

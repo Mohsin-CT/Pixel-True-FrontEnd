@@ -30,7 +30,7 @@ const RecommendedBlogs = () => {
   } = TWCconfig;
 
   return (
-    <div className="px-4 lg:px-0 pt-10 pb-20">
+    <div className="px-4 lg:px-0 pt-10">
       <div className=" text-[20px] lg:text-[48px] font-[600]">
         <h3>Recommended blogs</h3>
       </div>

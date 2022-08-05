@@ -65,7 +65,7 @@ const AlreadyHaveAccount = () => {
           >
             <div className="flex-col">
               <div className="flex ">
-                <h3 className="text-[24px] font-[700]">
+                <h3 className="text-[24px] font-poppin-bold">
                   To activate a phone on your existing account, follow these
                   steps:
                 </h3>
@@ -129,7 +129,7 @@ const AlreadyHaveAccount = () => {
         </div>
         <div className="flex flex-col mt-10 px-4 lg:px-0 lg:mt-20">
           <div className="flex ">
-            <h3 className="text-[24px] font-[700]">
+            <h3 className="text-[24px] font-poppin-bold">
               Here are some carriers whose phones are compatible with MetroPCS:
             </h3>
           </div>
@@ -166,7 +166,7 @@ const AlreadyHaveAccount = () => {
 
         <div className="flex flex-col px-4 lg:px-0 mt-14">
           <div className="flex ">
-            <h3 className="text-[24px] font-[700]">
+            <h3 className="text-[24px] font-poppin-bold">
               This can be acquired in several different ways:
             </h3>
           </div>

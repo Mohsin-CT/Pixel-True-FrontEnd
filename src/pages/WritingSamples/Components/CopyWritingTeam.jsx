@@ -37,26 +37,27 @@ export default function CopyWritingTeam(props) {
     writingmainContainer,
     writingmainDiv,
     gridMainContainer,
-    TagsMainContainer,
+    FiltersMenu,
     extracardMainContainer,
     extractSubContainer,
     seePricing,
     welive,
     hireusContainer,
     hireUs,
+    active
   } = TWCconfig;
   return (
     <div className={writingmainContainer}>
       <div className={writingmainDiv}>
-        <div className="flex flex-col pt-10">
-          <div className={TagsMainContainer}>
-            <h1>All</h1>
-            <h1>Technology</h1>
-            <h1>Environment</h1>
-            <h1>pet</h1>
-            <h1>Branding</h1>
-            <h1>Design</h1>
-          </div>
+        <div className="flex flex-col">
+          <ul className={FiltersMenu}>
+            <li className={active}> <a href="#">All</a> </li>
+            <li> <a href="#">Technology</a> </li>
+            <li> <a href="#">Environment</a> </li>
+            <li> <a href="#">Pet</a> </li>
+            <li> <a href="#">Branding</a> </li>
+            <li> <a href="#">Design</a> </li>
+          </ul>
 
           <div className={gridMainContainer}>
             {cardData.map((data) => {

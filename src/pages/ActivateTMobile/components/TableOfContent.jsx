@@ -6,10 +6,10 @@ const TableOfContent = () => {
   const { CopywritingSecrets, CopywritingP, CopywritingTitle } = TWCconfig;
 
   return (
-    <div className="flex justify-center bg-orange-50 ">
-      <div className="container px-4 lg:px-0 py-20 flex-col">
+    <div className="flex justify-center bg-orange-50 py-[100px] px-[100px]">
+      <div className="w-full max-w-[1396px] mx-auto">
         <div className="flex ">
-          <h3 className="text-[24px] font-[700]">Table of Contents</h3>
+          <h3 className="text-[24px] font-poppin-bold">Table of Contents</h3>
         </div>
         <div className="flex flex-col gap-5 text-[20px] mt-5 text-gray-850 font-[4000]">
           <div className="flex gap-3 items-center">

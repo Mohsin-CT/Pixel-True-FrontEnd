@@ -14,11 +14,11 @@ export default function WritingHeroSection(props) {
     HeroSectionTitleWrap,
     HeroSectionText,
     SeeBtn,
-    WritingHeroSectionWrapper,
+    HeroSectionTitleWriting,
   } = TWCconfig;
   return (
     <div
-      className={`w-full bg-orange-150 mx-auto flex flex-col lg:flex-wrap lg:flex-row pt-14 pb-[130px] pl-0 lg:pl-20 pr-0 relative ${
+      className={`w-full bg-pink-150 mx-auto flex flex-col lg:flex-wrap lg:flex-row pt-[150px] lg:pt-[180px] xl:pt-[250px] pb-[50px] relative px-[20px] md:px-[50px] lg:px-[100px] ${
         location === "individualBlog" ||
         location === "writingSample" ||
         location === "activateTMobile" ||
@@ -29,10 +29,10 @@ export default function WritingHeroSection(props) {
       }`}
     >
       <div className="flex flex-col lg:flex-row justify-center w-full ">
-        <div className="container flex items-center flex-col lg:flex-row">
-          <div className="w-full lg:w-[53%] pl-10 lg:pl-[180px]  g:order-1">
+        <div className="w-full max-w-[1450px] mx-auto flex items-center flex-col md:flex-row">
+          <div className="w-full md:w-[50%]  g:order-1">
             <div className={HeroSectionTitleWrap}>
-              <h1 className={HeroSectionTitle}>Writing Samples</h1>
+              <h1 className={HeroSectionTitleWriting}>Writing Samples</h1>
               <p className={HeroSectionText}>
                 Want to see what we can do? Review some of the amazing articles
                 below that have increased engagement, driven organic traffic,
@@ -43,8 +43,8 @@ export default function WritingHeroSection(props) {
               </a>
             </div>
           </div>
-          <div className=" w-full lg:w-[47%]  flex lg:justify-center lg:order-2 justify-center HeroSectionImg-overlay px-4 lg:pr-24 pt-10">
-            <ImageAsset src="writingHeroImage" className="h-[80%] w-[60%]" />
+          <div className="mt-[40px] md:mt-[0] w-full md:w-[50%] flex lg:justify-center lg:order-2 justify-center md:px-[50px] lg:px-[100px]">
+            <ImageAsset src="writingHeroImage" />
           </div>
         </div>
       </div>
