@@ -108,7 +108,7 @@ const Homepage = () => {
       </div>
 
       <div className={CopywritingSecrets}>
-        <div className="w-full lg:w-1/2 border">
+        <div className="w-full lg:w-1/2 ">
           <h2 className={CopywritingTitle}>Copywriting Secrets</h2>
           <p className={CopywritingP}>
             Sign up for contact and receive a series of invaluable copywriting
