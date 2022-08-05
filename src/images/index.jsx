@@ -33,16 +33,17 @@ import QuoteLargeEnd from "./QuoteLargeStartIcon.png";
 import menuopen from "./Common/menuopen.png";
 import menuclose from "./Common/menuClose.png";
 
-
 //pxelcopyblog
 import DogCollar from "./PixelCopyBlog/DogCollar.png";
 import BigDog from "./PixelCopyBlog/BigDog.png";
 import SolarP from "./PixelCopyBlog/SolarP.png";
 import WindT from "./PixelCopyBlog/WindT.png";
-import TapWater from "./PixelCopyBlog/TapWater.png"
-import WindTT from "./PixelCopyBlog/WindTT.png"
+import TapWater from "./PixelCopyBlog/TapWater.png";
+import WindTT from "./PixelCopyBlog/WindTT.png";
 
-
+// Slider images
+import leftquote from "./Slider/leftquote.jpg";
+import quotes from "./Slider/quote.jpg";
 
 export const images = {
   // Individual Blog
@@ -78,7 +79,9 @@ export const images = {
   QuoteLargeEnd,
   menuopen,
   menuclose,
-
+  // slider
+  leftquote,
+  quotes,
   //pixelCopyBlog
   DogCollar,
   WindT,
