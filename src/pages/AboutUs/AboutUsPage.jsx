@@ -1,8 +1,6 @@
 import React from "react";
 import TWCconfig from "../../TWCconfig.json";
 import img4 from "../../images/img4.png";
-import SliderView from "../../images/SliderView.png";
-
 import GrahamIcon from "../../images/Graham.png";
 import PatrickIcon from "../../images/patrick.png";
 import warrenIcon from "../../images/warren.png";
@@ -18,6 +16,7 @@ import Footer from "../commonComponents/Footer";
 import CopywritingForm from "../HomePage/components/CopywritingForm";
 import SideContentBox from "../commonComponents/SideContentBox";
 import BookCall from "../commonComponents/BookCallSection";
+import SliderView from "../commonComponents/SliderView";
 
 export const AboutUsPage = () => {
   const {
@@ -169,11 +168,14 @@ export const AboutUsPage = () => {
             Our clients tell the true story of how we can help <br /> drive
             results through copy
           </p>
-          <div className={SliderContainer}>
-            <img src={SliderView} alt="" />
-          </div>
         </div>
       </div>
+      <div className={SliderContainer}>
+            {/* <img src={SliderView} alt="" /> */}
+            <div className="h-[550px] xl:h-[700px] w-full">
+              <SliderView />
+            </div>
+          </div>
       <div className={CopywritingSecrets3}>
         <div className="flex w-full flex-wrap max-w-[1405px] mx-auto items-center">
         <div className="w-full sm:w-1/2 pr-[50px]">

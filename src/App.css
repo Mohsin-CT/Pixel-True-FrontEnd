@@ -142,7 +142,7 @@
   z-index: -1;
 }
 .LightSimpleTextBlock {
-  max-width: 1600px;
+  max-width: 1420px;
 }
 .LightSimpleTextBlock2 {
   max-width: 100%;
@@ -423,8 +423,7 @@
 
   /* Slider Css */
 .react-3d-carousel .slider-container .slider-content .slider-single.active .slider-single-content{
-  width: 80%;
-  height: 20rem;
+  width: 830px;
  
 }
 .react-3d-carousel .slider-container .slider-content .slider-single.active{
@@ -435,19 +434,51 @@
   width: 100%;
   border-radius: 0.5rem;
 }
-.react-3d-carousel .slider-container .slider-content .slider-single.preactive .slider-single-content{
-  height: 20rem;
-  
-}
-.react-3d-carousel .slider-container .slider-content .slider-single.preactive .slider-single-content{
-  height: 20rem;
-  
-}
-.react-3d-carousel .slider-container .slider-content .slider-single.proactive .slider-single-content{
-  height: 20rem;
-}
 .fa{
   color: black;
 }
-
+body .react-3d-carousel .slider-container .slider-content .slider-single.preactive .slider-single-content,
+body .react-3d-carousel .slider-container .slider-content .slider-single.proactive .slider-single-content {
+  opacity: 1;
+  background: #EB5728;
+  border-radius: 10px;
+}
+body .react-3d-carousel .slider-container .slider-content .slider-single.preactive .slider-single-content .bg-white,
+body .react-3d-carousel .slider-container .slider-content .slider-single.proactive .slider-single-content .bg-white {
+  background: transparent;
+    opacity: 0.3;
+}
+body .react-3d-carousel .slider-container .slider-left div,
+body .react-3d-carousel .slider-container .slider-right div {
+  border: none;
+  padding: 0;
+  position: relative;
+}
+body .react-3d-carousel .slider-container .slider-left div {
+    margin-left: -30px;
+}
+body .react-3d-carousel .slider-container .slider-left div i,
+body .react-3d-carousel .slider-container .slider-right div i {
+  background-image: url(../src/images/sliderArrow.svg);
+  width: 47px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+body .react-3d-carousel .slider-container .slider-right div i {
+  transform: rotate(180deg);
+}
+body .react-3d-carousel .slider-container .slider-left div *,
+body .react-3d-carousel .slider-container .slider-right div * {
+  font-size: 0;
+}
+@media all and (max-width: 1024px) {
+  .react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content,
+  .react-3d-carousel .slider-container .slider-content {
+    max-width: 700px !important;
+  }
+  .react-3d-carousel .slider-container .slider-content .slider-single .slider-left,
+  .react-3d-carousel .slider-container .slider-content .slider-single .slider-right {
+    display: none !important;
+  }
+}
 

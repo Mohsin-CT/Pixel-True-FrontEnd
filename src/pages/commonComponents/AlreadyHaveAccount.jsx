@@ -27,7 +27,7 @@ const AlreadyHaveAccount = () => {
 
   return (
     <div>
-      <div className="flex flex-col py-20">
+      <div className="flex flex-col py-10 lg:py-20">
         <div>
           {location === "individualBlog" ? (
             <ImageAsset src="BlogActivatePerson" style={{ width: "100%" }} />
@@ -37,15 +37,15 @@ const AlreadyHaveAccount = () => {
         </div>
         <div className="flex gap-8 py-10">
           <div className="w-[0.5rem]  bg-green-400"></div>
-          <div className="text-[20px]  lg:text-[48px] font-[600] ">
+          <div className="text-[30px] lg:text-[38px] xl:text-[48px] font-poppin-semibold ">
             <h3 className="leading-[2rem] lg:leading-[56px]">
               If You Already Have a Metro by &nbsp;
               <span className="text-orange-850">T-Mobile Account</span>
             </h3>
           </div>
         </div>
-        <div className="flex flex-col text-[24px] font-[400] text-gray-850 gap-6 px-4 lg:pl-0 lg:pr-10">
-          <p className=" px-0 lg:pl-0  lg:pr-20">
+        <div className="flex flex-col text-[20px] xl:text-[24px] font-Manjari-400 text-gray-850 gap-6 px-4 lg:pl-0 lg:pr-10">
+          <p>
             If you already have a Metro by T-Mobile account and your new phone
             is set up for use with Metro, learning how to activate a Metro phone
             for free becomes much simpler.
@@ -55,34 +55,34 @@ const AlreadyHaveAccount = () => {
           className={`  ${
             location === "individualBlog"
               ? "px-0 py-10 "
-              : "px-4 lg:px-[18rem] py-10 lg:py-20"
+              : "w-full max-w-[955px] mx-auto my-[60px]"
           }`}
         >
           <div
-            className={` p-10 lg:p-20 ${
+            className={` px-[20px] lg:px-[50px] xl:px-[100px] py-[40px] xl:py-[60px] ${
               location === "individualBlog" ? "bg-green-150" : "bg-orange-50"
             }`}
           >
             <div className="flex-col">
               <div className="flex ">
-                <h3 className="text-[24px] font-poppin-bold">
+                <h3 className="text-[20px] lg:text-[24px] font-poppin-bold">
                   To activate a phone on your existing account, follow these
                   steps:
                 </h3>
               </div>
-              <div className="flex flex-col gap-5 text-[20px] mt-5 text-gray-850 font-[4000]">
+              <div className="flex flex-col gap-5 text-[18px] xl:text-[20px] mt-5 text-gray-850 font-Manjari-400">
                 {AlreadyAccountListData.map((data, index) => {
                   return (
-                    <div className="flex gap-4 items-center">
+                    <div className="flex gap-4 items-center relative">
                       <div
-                        className={`h-4 w-4 rounded-full ${
+                        className={`h-4 w-4 rounded-full absolute left-0 top-[6px] ${
                           location === "individualBlog"
                             ? "bg-green-400"
                             : "bg-orange-850"
                         }`}
                       ></div>
-                      <h3>
-                        <span className="font-[400] text-[24px]">
+                      <h3 className="pl-[25px]">
+                        <span className="font-Manjari-400 text-[20px] xl:text-[24px]">
                           Step {index + 1}:
                         </span>
                         {data.title}
@@ -94,7 +94,7 @@ const AlreadyHaveAccount = () => {
             </div>
           </div>
         </div>
-        <div className="text-[20px] font-[400] px-4 lg:pl-0 lg:pr-20">
+        <div className="text-[20px] font-Manjari-400 px-4 lg:pl-0 lg:pr-20">
           <p>
             That’s it! You’re all done and your new phone should be ready for
             use. The only time there will be any additional steps is if your new
@@ -107,15 +107,15 @@ const AlreadyHaveAccount = () => {
               <ImageAsset src="blogActivatingphone" style={{ width: "100%" }} />
             </div>
           )}
-          <div className="flex gap-8 py-10 mt-2 lg:mt-20">
+          <div className="flex gap-8 py-10 mt-10 xl:mt-20">
             <div className="w-[0.5rem]  bg-green-400"></div>
-            <div className="text-[20px] lg:text-[48px] font-[600] ">
+            <div className="text-[30px] lg:text-[38px] xl:text-[48px] font-poppin-semibold">
               <h3 className="leading-[2rem] lg:leading-[56px]">
                 Activating a Phone You Brought Over From Another <br /> Carrier
               </h3>
             </div>
           </div>
-          <div className="flex flex-col px-4 lg:pl-0 lg:pr-20 text-[20px] gap-10 font-[400]">
+          <div className="flex flex-col px-4 lg:pl-0 lg:pr-20 text-[18px] lg:text-[20px] gap-10 font-Manjari-400">
             <p>
               If you’re activating a phone that you had with a different
               carrier, you’ll first need to make sure that it’s compatible with
@@ -133,24 +133,24 @@ const AlreadyHaveAccount = () => {
               Here are some carriers whose phones are compatible with MetroPCS:
             </h3>
           </div>
-          <div className="flex flex-col gap-5 text-[20px] mt-8 text-gray-850 font-[4000]">
+          <div className="flex flex-col gap-5 text-[18px] xl:text-[20px] mt-8 text-gray-850 font-Manjari-400">
             {MetroPCS.map((data) => {
               return (
-                <div className="flex gap-4 items-center">
+                <div className="flex gap-4 items-center relative">
                   <div
-                    className={`h-4 w-4 rounded-full  ${
+                    className={`h-4 w-4 rounded-full absolute left-0 top-[6px] ${
                       location === "individualBlog"
                         ? "bg-green-400"
                         : "bg-orange-850"
                     }`}
                   ></div>
-                  <h3>{data.title}</h3>
+                  <h3 className="pl-[25px]">{data.title}</h3>
                 </div>
               );
             })}
           </div>
         </div>
-        <div className="flex flex-col mt-14 gap-10 text-[20px] font-[400] px-4 lg:pl-0 lg:pr-20">
+        <div className="flex flex-col mt-14 gap-10 text-[18px] xl:text-[20px] font-Manjari-400 px-4 lg:pl-0 lg:pr-20">
           <p>
             If you have a newer phone that’s from a network other than T-Mobile
             or AT&T, there’s a chance that yours may be compatible. Newer phones
@@ -166,22 +166,22 @@ const AlreadyHaveAccount = () => {
 
         <div className="flex flex-col px-4 lg:px-0 mt-14">
           <div className="flex ">
-            <h3 className="text-[24px] font-poppin-bold">
+            <h3 className="text-[20px] lg:text-[24px] font-poppin-bold mb-[20px]">
               This can be acquired in several different ways:
             </h3>
           </div>
-          <div className="flex flex-col gap-5 text-[20px] mt-2 text-gray-850 font-[4000]">
+          <div className="flex flex-col gap-5 text-[18px] lg:text-[20px] mt-2 text-gray-850 font-[4000]">
             {AcquirdList.map((data) => {
               return (
-                <div className="flex gap-4 items-center">
+                <div className="flex gap-4 items-center relative">
                   <div
-                    className={` h-4 w-4 rounded-full  ${
+                    className={` h-4 w-4 rounded-full absolute left-0 top-[6px] ${
                       location === "individualBlog"
                         ? "bg-green-400"
                         : "bg-orange-850"
                     }`}
                   ></div>
-                  <h3>{data.title}</h3>
+                  <h3 className="pl-[25px]">{data.title}</h3>
                 </div>
               );
             })}

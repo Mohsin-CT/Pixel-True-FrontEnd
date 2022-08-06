@@ -23,10 +23,10 @@ const IndividualBlogs = () => {
       <div>
         <Header />
         <IndividualHeroComp />
-        <div className="flex justify-center ">
-          <div className="container">
+        <div className="flex justify-center px-[20px] lg:px-[50px] xl:px-[100px] pt-[50px] lg:pt-[100px] xl:pt-[150px]">
+          <div className="max-w-[1396px] w-full mx-auto">
             <div className="flex flex-col lg:flex-row gap-12 ">
-              <div className="flex flex-col w-full lg:w-[70%]">
+              <div className="flex flex-col w-[100%] lg:w-[65%] xl:w-[68%]">
                 <IndividualMetroPcs />
                 <TableOfContent />
                 <HowToActivate />
@@ -37,15 +37,15 @@ const IndividualBlogs = () => {
                 <FinalThought />
               </div>
 
-              <div className="flex flex-col w-full lg:w-[30%] pt-[10rem]">
+              <div className="flex flex-col w-full w-full lg:w-[35%] xl:w-[32%]">
                 <BlogCoulmnCard />
               </div>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-center">
-          <div className="container">
+        <div className="flex justify-center px-[20px] lg:px-[50px] xl:px-[100px]">
+          <div className="max-w-[1396px] w-full mx-auto">
             <AboutAurthor />
             <div className="border-t-4  border-gray-150 my-20">
               <RecommendedBlogs />
@@ -53,7 +53,7 @@ const IndividualBlogs = () => {
           </div>
         </div>
 
-        <div className="mb-[-5rem]">
+        <div className="px-[20px] lg:px-[50px] xl:px-[100px] mb-[50px] md:mb-[-110px]">
           <SeePricing />
         </div>
         <Footer />

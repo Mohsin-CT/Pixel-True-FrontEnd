@@ -75,7 +75,7 @@ export default function PixelCopy() {
         </div>
         <div className={PaginationContainer}>
           <button className={PaginationBtn}>Prev</button>
-          <ul className="flex justify-center items-center space-x-[10px] text-[20px] text-orange-850 font-poppin-bold">
+          <ul className="flex justify-center items-center space-x-[10px] text-[16px] md:text-[18px] lg:text-[20px] text-orange-850 font-poppin-bold">
             <li> <a className={PaginationItemActive} href="#">1</a> </li>
             <li> <a className={PaginationItem} href="#">2</a> </li>
             <li> <a className={PaginationItem} href="#">3</a> </li>

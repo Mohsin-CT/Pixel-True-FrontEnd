@@ -62,7 +62,7 @@ export default function CopyWritingTeam(props) {
           <div className={gridMainContainer}>
             {cardData.map((data) => {
               return (
-                <div className="shadow-2xl  rounded-lg">
+                <div className="shadow-3xl  rounded-lg">
                   <Card data={data} />
                 </div>
               );

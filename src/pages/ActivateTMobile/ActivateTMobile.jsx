@@ -21,26 +21,26 @@ const ActivateTMobile = () => {
     <div>
       <Header />
       <ActivateHeroComp />
-      <div className="flex justify-center px-[20px] md:px-[50px] lg:px-[100px]">
+      <div className="flex justify-center px-[20px] lg:px-[50px] xl:px-[100px]">
         <div className="w-full max-w-[1396px] mx-auto">
           <MetroPcs />
         </div>
       </div>
       <TableOfContent />
-      <div className="flex justify-center px-[20px] md:px-[50px] lg:px-[100px]">
+      <div className="flex justify-center px-[20px] lg:px-[50px] xl:px-[100px]">
         <div className="w-full max-w-[1396px] mx-auto">
           <HowToActivate />
         </div>
       </div>
       <InformationBox />
-      <div className="flex justify-center px-[20px] md:px-[50px] lg:px-[100px]">
+      <div className="flex justify-center px-[20px] lg:px-[50px] xl:px-[100px]">
         <div className="w-full max-w-[1396px] mx-auto">
           <ActivateSteps />
           <AlreadyHaveAccount />
         </div>
       </div>
       <InformationBox />
-      <div className="flex justify-center px-[20px] md:px-[50px] lg:px-[100px]">
+      <div className="flex justify-center px-[20px] lg:px-[50px] xl:px-[100px]">
         <div className="w-full max-w-[1396px] mx-auto">
           <ActivateForFree />
           <RecommendedBlogs />
@@ -51,7 +51,7 @@ const ActivateTMobile = () => {
         <Pagination/>
       </div>
 
-      <div className="mb-[-5rem]">
+      <div className="px-[20px] lg:px-[50px] xl:px-[100px] mb-[0] md:mb-[-50px] lg:mb-[-100px]">
         <SeePricing />
       </div>
       <Footer />

@@ -151,7 +151,7 @@ const Homepage = () => {
             finish without issue.
           </p>
           <PricingTable />
-          <div className="w-full max-w-[1280px] m-auto text-center pt-[80px] pb-[119px]">
+          <div className="w-full max-w-[1280px] m-auto text-center pt-[80px] pb-[70px] lg:pb-[80px] xl:pb-[119px]">
             <p className={SimpleTextBlockTextPricing}>
               Why do we have a minimum of 8,000 words? Well we want you to see
               value out of our writing and if you're not posting at least two
@@ -192,17 +192,19 @@ const Homepage = () => {
             Our clients tell the true story of how we can help <br /> drive
             results through copy
           </p>
-          <div className={SliderContainer}>
+        </div>
+      </div>
+        <div className={SliderContainer}>
             {/* <img src={SliderView} alt="" /> */}
-            <div className="h-[24rem] w-full">
+            <div className="h-[550px] xl:h-[700px] w-full">
               <SliderView />
             </div>
           </div>
-          <div className="flex ">
+
+          <div className="flex px-[20px] lg:px-[50px] xl:px-[100px]">
             <SeePricing />
           </div>
-        </div>
-      </div>
+
 
       <Footer />
     </div>

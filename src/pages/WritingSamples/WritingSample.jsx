@@ -20,7 +20,7 @@ const WritingSample = () => {
       <Header />
       <WritingHeroSection />
       <CopyWritingTeam />
-      <div className="px-[20px] md:px-[50px] lg:px-[100px]">
+      <div className="px-[20px] md:px-[50px] xl:px-[100px]">
         <SeePricing />
       </div>
       <div>
