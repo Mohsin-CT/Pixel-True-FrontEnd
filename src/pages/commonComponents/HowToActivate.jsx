@@ -21,7 +21,7 @@ const HowToActivate = () => {
   const { CopywritingSecrets, CopywritingP, CopywritingTitle } = TWCconfig;
 
   return (
-    <div className="flex flex-col py-20">
+    <div className="flex flex-col py-10 lg:py-20">
       <div>
         {selectedRoute === "individualBlog" ? (
           <ImageAssets src="BlogActiveMetroFree" style={{ width: "100%" }} />
@@ -38,7 +38,7 @@ const HowToActivate = () => {
           }`}
         ></div>
         <div
-          className={`"text-[20px] lg:text-[48px] font-[600] " ${
+          className={`"text-[30px] lg:text-[38px] xl:text-[48px] font-poppin-semibold " ${
             selectedRoute === "individualBlog" ? "" : "pr-0"
           }`}
         >
@@ -51,7 +51,7 @@ const HowToActivate = () => {
           </h3>
         </div>
       </div>
-      <div className="flex flex-col text-[20px] font-[400] text-gray-850 gap-6 px-2 lg:px-0 pr-0 lg:pr-20">
+      <div className="flex flex-col text-[20px] font-Manjari-400 text-gray-850 gap-6 px-2 lg:px-0 pr-0 lg:pr-20">
         <p>
           When it comes to how to activate a MetroPCS phone for free, you’ll be
           happy to know that MetroPCS has free activation for their phones
@@ -72,18 +72,18 @@ const HowToActivate = () => {
         <div className="flex ">
           <h3 className="text-[24px] font-poppin-bold">This Includes :</h3>
         </div>
-        <div className="flex flex-col gap-5 text-[20px] mt-5 text-gray-850 font-[4000]">
+        <div className="flex flex-col gap-5 text-[18px] lg:text-[20px] mt-5 text-gray-850 font-[4000]">
           {includesData.map((data) => {
             return (
-              <div className="flex gap-4 items-center">
+              <div className="flex gap-4 items-center relative">
                 <div
-                  className={` h-4 w-7 lg:w-4 rounded-full  ${
+                  className={` h-4 w-4 rounded-full absolute left-0 top-[6px]  ${
                     selectedRoute === "individualBlog"
                       ? "bg-green-400"
                       : "bg-orange-850"
                   } `}
                 ></div>
-                <h3>{data.title}</h3>
+                <h3 className="pl-[25px]">{data.title}</h3>
               </div>
             );
           })}

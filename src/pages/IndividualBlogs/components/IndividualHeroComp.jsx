@@ -5,7 +5,7 @@ const individualHero = () => {
   const {HeroSectionTitleoverlayTitle3 } = TWCconfig;
   return (
     <div>
-      <div className="flex bg-pink-150 pt-[150px] lg:pt-[180px] xl:pt-[250px] 2xl:pt-[421px] pb-[100px] px-[20px] md:px-[50px] lg:px-[100px]">
+      <div className="flex bg-pink-150 pt-[150px] lg:pt-[180px] xl:pt-[250px] 2xl:pt-[421px] pb-[100px] px-[20px] lg:px-[50px] xl:px-[100px]">
       <div className="w-full max-w-[1500px] mx-auto flex justify-center flex-col ">
         <h1 className={HeroSectionTitleoverlayTitle3}>
         How to Activate a Metro by <br />

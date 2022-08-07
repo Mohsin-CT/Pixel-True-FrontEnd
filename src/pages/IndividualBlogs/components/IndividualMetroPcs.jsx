@@ -12,11 +12,11 @@ const IndividualMetroPcs = () => {
   // BlogUserImage,
   return (
     <div>
-      <div className=" flex flex-col py-0 lg:py-20">
-        <div className=" flex  mt-20">
+      <div className=" flex flex-col">
+        <div className=" flex">
           <ImageAsset src="BlogMetroPcs" className="w-full object-cover " />
         </div>
-        <div className="flex flex-col gap-8 text-[20px] px-2 lg:px-0 mt-20 font-[400] pr-0 lg:pr-20">
+        <div className="flex flex-col gap-8 text-[20px] px-2 lg:px-0 mt-20 font-Manjari-400 pr-0 lg:pr-20">
           <p className="leading-[32px]">
             MetroPCS (now Metro by T-Mobile) has free phone activation for both
             new and existing clients. There are a variety of ways to activate

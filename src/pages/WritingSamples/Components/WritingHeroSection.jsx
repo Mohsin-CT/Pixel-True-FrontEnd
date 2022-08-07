@@ -18,7 +18,7 @@ export default function WritingHeroSection(props) {
   } = TWCconfig;
   return (
     <div
-      className={`w-full bg-pink-150 mx-auto flex flex-col lg:flex-wrap lg:flex-row pt-[150px] lg:pt-[180px] xl:pt-[250px] pb-[50px] relative px-[20px] md:px-[50px] lg:px-[100px] ${
+      className={`w-full bg-pink-150 mx-auto flex flex-col lg:flex-wrap lg:flex-row pt-[150px] lg:pt-[180px] xl:pt-[250px] pb-[50px] relative px-[20px] lg:px-[50px] xl:px-[100px] ${
         location === "individualBlog" ||
         location === "writingSample" ||
         location === "activateTMobile" ||

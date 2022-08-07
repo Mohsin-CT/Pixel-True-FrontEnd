@@ -5,13 +5,13 @@ import Header from "../commonComponents/Header";
 import PricingTable from "../commonComponents/PricingTable";
 import img2 from "../../images/img2.png";
 import img4 from "../../images/img4.png";
-import SliderView from "../../images/SliderView.png";
 import AlternativesTable from "../HomePage/components/AlternativesTable";
 import ChooseAddOns from "./components/ChooseAddOns";
 import GetStarted from "./components/GetStarted";
 import SideContentBox from "../commonComponents/SideContentBox";
 import FAQ from "./components/Faqs";
 import CopywritingForm from "../HomePage/components/CopywritingForm";
+import SliderView from "../commonComponents/SliderView";
 
 const Pricing = () => {
   const {
@@ -135,11 +135,14 @@ const Pricing = () => {
             Our clients tell the true story of how we can help <br /> drive
             results through copy
           </p>
-          <div className={SliderContainer}>
-            <img src={SliderView} alt="" />
-          </div>
         </div>
       </div>
+      <div className={SliderContainer}>
+            {/* <img src={SliderView} alt="" /> */}
+            <div className="h-[550px] xl:h-[700px] w-full">
+              <SliderView />
+            </div>
+          </div>
       <div className={LightContentBoxContainer}>
         <div className={LightSimpleTextBlock3}>
           <div className="flex flex-wrap items-center">

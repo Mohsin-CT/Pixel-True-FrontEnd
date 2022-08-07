@@ -5,8 +5,8 @@ const AboutAurthor = () => {
   return (
     <div>
       <div className="mt-20 border-t-4 flex flex-col border-gray-50 py-10 px-4 lg:px-0 lg:py-20">
-        <h3 className="text-[24px] font-[600]">About the Author</h3>
-        <div className="flex items-center gap-10 mt-10 text-[24px] font-[600] ">
+        <h3 className="text-[24px] font-poppin-semibold">About the Author</h3>
+        <div className="flex items-center gap-10 mt-10 text-[24px] font-poppin-semibold ">
           <div className="rounded-full h-20 w-20 bg-gray-250 ">
             <ImageAsset src="BlogUserImage" />
           </div>
@@ -15,7 +15,7 @@ const AboutAurthor = () => {
             <h3 className="text-orange-850 opacity-50">Lorem Ipsum</h3>
           </div>
         </div>
-        <p className="text-[20px] mt-10 font-[400] leading-[32px] text-gray-850">
+        <p className="text-[20px] mt-10 font-Manjari-400 leading-[32px] text-gray-850">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -25,7 +25,7 @@ const AboutAurthor = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <div className="flex justify-between items-center mt-20">
-          <h3 className=" text-[16px] lg:text-[24px] font-[600]">
+          <h3 className=" text-[16px] lg:text-[24px] font-poppin-semibold">
             More posts by Pixel Copy
           </h3>
           <div className="flex gap-4">
@@ -40,14 +40,14 @@ const AboutAurthor = () => {
       </div>
 
       <div className="flex flex-col  border-t-4  border-gray-150 ">
-        <div className="flex text-[24px] font-[600] pt-20 justify-start">
+        <div className="flex text-[24px] font-poppin-semibold pt-20 justify-start">
           <h3 className="">Post a Reply</h3>
         </div>
         <div className="flex flex-col gap-6 lg:flex-row   mt-10">
           <div className="w-full lg:w-1/2">
             <textarea
               name=""
-              className="h-[20rem] w-full pt-8 pl-8 text-[20px] font-[400] rounded-[3rem] bg-gray-150 border border-gray-200"
+              className="h-[20rem] w-full pt-8 pl-8 text-[20px] font-Manjari-400 rounded-[3rem] bg-gray-150 border border-gray-200"
               id=""
               cols="30"
               rows="10"

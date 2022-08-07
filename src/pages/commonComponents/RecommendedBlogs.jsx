@@ -31,7 +31,7 @@ const RecommendedBlogs = () => {
 
   return (
     <div className="px-4 lg:px-0 pt-10">
-      <div className=" text-[20px] lg:text-[48px] font-[600]">
+      <div className=" text-[30px] lg:text-[38px] xl:text-[48px] font-poppin-semibold">
         <h3>Recommended blogs</h3>
       </div>
       <div>
@@ -53,7 +53,7 @@ const RecommendedBlogs = () => {
           {cardData.map((data) => {
             return (
               <div
-                className="shadow-2xl  rounded-lg"
+                className="shadow-3xl  rounded-lg"
                 onClick={() =>
                   localStorage.setItem("SelectedPage", "pixelCopyBlog")
                 }

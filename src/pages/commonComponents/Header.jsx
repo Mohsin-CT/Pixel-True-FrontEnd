@@ -56,11 +56,13 @@ export default function Header(props) {
               </a>
             </li>
             <li className={MainMenuLi}>
-              <a href="#">About Us</a>
+              <a href="/aboutus"
+                onClick={() => localStorage.setItem("SelectedPage", "aboutus")}>About Us</a>
             </li>
 
             <li className={MainMenuLi}>
-              <a>Writing Samples</a>
+              <a href="/writingSample"
+                onClick={() => localStorage.setItem("SelectedPage", "writingSample")}>Writing Samples</a>
             </li>
           </ul>
         </nav>
